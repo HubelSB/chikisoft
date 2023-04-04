@@ -4,6 +4,7 @@ class principal{
 
     public function saluda(){
         echo $dato;
+        
     }
 }
 
