@@ -1,11 +1,17 @@
 <?php
+include 'controladores/controladorinicial.php'
+use controladores/controladorinicial
 
-class principal {
-    const $dato = "hola";
+date_default_timezone_set('America');
 
-    function saluda {
-        echo $dato;
-    }
-}
+$paginaprincipal = new controladorinicial();
+$paginaprincipal -> cargaportal();
+// class principal {
+//     public $dato = "hola";
+
+//     public function saluda() {
+//         echo $dato;
+//     }
+// }
 
 ?>
