@@ -1,17 +1,9 @@
 <?php
-include 'controladores/controladorinicial.php'
-use controladores/controladorinicial
+// Esta directiva jala un archivo
+include 'controladores/controladorprincipal.php';
+// Esta directiva usa el contenido especifico
+use controladores\controladorprincipal;
 
-date_default_timezone_set('America');
-
-$paginaprincipal = new controladorinicial();
-$paginaprincipal -> cargaportal();
-// class principal {
-//     public $dato = "hola";
-
-//     public function saluda() {
-//         echo $dato;
-//     }
-// }
-
+$miinstancia = new controladorprincipal();
+$miinstancia->presentarpantalla();
 ?>

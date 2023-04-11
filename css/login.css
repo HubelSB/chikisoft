@@ -1,0 +1,13 @@
+.formulario {
+    margin: auto;
+    background: rgb(145, 145, 221);
+    height: 300px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario>* {
+    margin: 20%;
+}
