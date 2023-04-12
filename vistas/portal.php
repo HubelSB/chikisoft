@@ -1,12 +1,15 @@
 <?php
-session_start();
-if (isset($_SESSION["usuario"])){
-    include "vistas/menu.php";
-    include "vistas/cuerpo.php";
-    include "vistas/pie.php";
-} else {
-    echo "Eres un hacker novato ...";
-}
-
+ 
+ session_start();
+ if (isset($_SESSION["usuario"])) {
+    //echo "estas en : <br>";
+    //echo getcwd();
+    include "menu.php";
+    include "cuerpo.php";
+    include "pie.php";
+ } else 
+ {
+    header("Location: http://localhost/profe/chikisoft/vistas/login.php");
+ }
 
 ?>
