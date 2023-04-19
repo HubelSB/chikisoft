@@ -7,3 +7,4 @@ include "controladores/controladorprincipal.php";
  $miinstancia = new controladorprincipal();
  $miinstancia->presentarpantalla();
 ?>
+//hola que tal
