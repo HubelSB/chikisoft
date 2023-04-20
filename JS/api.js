@@ -1,7 +1,8 @@
 const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=20";
 
 const pokemonList = document.getElementById("pokemon-list");
-async function getPokemon() {
+async function getPokemon(cantidad) {
+    const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit="+cantidad;
 	const response = await fetch(apiUrl);
 	const data = await response.json();
 	const pokemonData = data.results;
@@ -42,4 +43,15 @@ async function getPokemonDetails(pokemon) {
 	pokemonList.appendChild(pokemonCard);
 }
 
-getPokemon();
+const buscador= document.getElementById("buscar");
+buscador.addEventListener("click", buscar);
+
+function buscar(){
+    const cantidad = document.getElementById("numpoke").value;
+    document.getElementById("pokemon-list").innerHTML="";
+    getPokemon(cantidad);
+    
+}
+
+
+

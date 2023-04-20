@@ -13,6 +13,11 @@
         <a href="http://localhost/chikisoft/controladores/salir.php">Salir</a>
     </header>
     <main class="main">
+        <div>¿cuantos pokemones quieres mostrar?</div>
+        <div>
+            <input id="numpoke"type="text">
+            <input id="buscar" type="button" value="Buscar">
+        </div>
 		<div id="pokemon-list"></div>
 	</main>
 

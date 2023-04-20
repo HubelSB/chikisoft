@@ -9,7 +9,7 @@
 </head>
 <body>
    <div class="formulario">
-      <img class="poke" src="../src/pokebola.jpg" alt="">
+      <img class="poke" src="src/pokebola.jpg" alt="">
       <form class="form-body"action="http://localhost/chikisoft/controladores/validar.php" method="post">
          <label for="usuario"> usuario </label>
          <input type="text" name="usuario" id="usuario">
