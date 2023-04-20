@@ -1,4 +1,4 @@
-<ul>
-    <li> opcion1 </li>
-    <li> opcion2 </li>
-</ul>
+<link rel="stylesheet" href="../css/header.css">
+<header>
+    <img src="../img/logo.png" class="logo">
+</header>

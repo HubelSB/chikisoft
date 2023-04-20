@@ -13,10 +13,10 @@ if ($usuario_sistema === $var_usuario
     session_start();
     $_SESSION["usuario"] = $var_usuario;
 
-    header("Location: http://localhost/profe/chikisoft/vistas/portal.php");
+    header("Location: http://localhost/chikisoft/vistas/portal.php");
 } else {
     echo "Usuario incorrecto...";
     echo "<BR>";
-    echo "<a href='http://localhost/profe/chikisoft/vistas/login.php'>Regresar</a>";
+    echo "<a href='http://localhost/chikisoft/vistas/login.php'>Regresar</a>";
 }
 ?>

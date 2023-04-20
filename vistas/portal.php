@@ -9,7 +9,7 @@
     include "pie.php";
  } else 
  {
-    header("Location: http://localhost/profe/chikisoft/vistas/login.php");
+    header("Location: http://localhost/chikisoft/vistas/login.php");
  }
 
 ?>
