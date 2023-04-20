@@ -1,12 +1,9 @@
 <?php
+// esta directiva jala un archivo
+incluir " controladores/controladorprincipal.php ";
+// esta directiva usa el contenido especifico
+ use controladores\controladorprincipal;  
 
-
-include "controladores/controladorinicial.php";
-use controladores\controladorinicial;
-
-//date_default_timezone_set('america');
-
-$paginaprincipal=new controladorinicial();
-$paginaprincipal->presentarpantalla();
-
+ $ miinstancia = new controladorprincipal();
+ $ miinstancia -> presentarpantalla ();
 ?>
