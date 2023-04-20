@@ -13,7 +13,7 @@ if ($usuario_sistema === $var_usuario
     session_start();
     $_SESSION["usuario"] = $var_usuario;
 
-    header("Location: http://localhost/chikisoft/vistas/poki.php");
+    header("Location: http://localhost/chikisoft/vistas/pokemon.php");
 } else {
     echo "Usuario incorrecto...";
     echo "<BR>";
