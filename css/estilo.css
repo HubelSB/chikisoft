@@ -1,8 +1,41 @@
-.formulario{
-    background: #f5caca;
+body{
+    background-image: url(../src/fondo.jpeg);
     display: flex;
-    height: 300px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    position: absolute, 50%,50%;
+
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background: #f0d0d0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 5%;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-body .ingresar{
+    color: azure;
+    background: #d73a3a ;
+    border: #d73a3a;
+    border-radius: 4px;
+}
+
+.poke{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
 }
