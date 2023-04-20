@@ -1,6 +1,5 @@
 <footer>
-    <div>
-       este es el pie de pagina  
-       <a href="http://localhost/chikisoft/controladores/salir.php">Salir</a>
+    <div class="container">
+    <a class="text-center text-black" href="http://localhost/chikisoft/controladores/salir.php">Salir</a>
     </div>
 </footer>
