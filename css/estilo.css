@@ -1,0 +1,35 @@
+.formulario{
+    width: 400px;
+    margin: 0 auto;
+    text-align: start;
+  }
+  
+
+  label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+ 
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #11c046;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #b408c4;
+    color: rgb(162, 240, 19);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
