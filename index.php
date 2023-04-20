@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css?v=1">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-        include('./vistas/topBar.php')
-    ?>
-</body>
-</html>
+<?php
+// esta directiva jala un archivo
+include "controladores/controladorprincipal.php";
+// esta directiva usa el contenido especifico
+ use controladores\controladorprincipal;  
+
+ $miinstancia = new controladorprincipal();
+ $miinstancia->presentarpantalla();
+?>
