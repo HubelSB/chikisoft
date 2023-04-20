@@ -1,0 +1,51 @@
+body{
+    background: cadetblue;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: cursive;
+}
+p{
+    font-size: 40px;
+    text-align: center;
+    font-family:sans-serif;
+}
+.formulario{
+    
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    margin:auto;
+}
+.clave{
+    display: block;
+    font-size: 22px;
+    
+}
+
+.ingresar{
+    display: flex;
+    color:white;
+}
+table,tr,th,td{
+    border: 1px solid black;
+    margin: 20px 200px 20px 400px;
+    background: rgb(100, 100, 192);
+}
+.btn{
+    display: flex;/*se puede poner width y height*/
+    padding: 20px 50px 20px 50px;
+    background: black;
+    color: white;
+    font-size: 20px;/*tamaño del boton*/
+    inset: 0;/*con */
+    margin: auto;/*centrado perfecto*/
+}
+.btn:hover{
+    background: red; 
+    color:black;
+}
