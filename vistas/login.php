@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="http://localhost/chikisoft/css/style.css">
 </head>
 <body>
-    <h1>INGRESO AL CHIKISISTEMA</h1>
+    <h1>BUSCADOR <span class="logo">POKEMON</span></h1>
+    <p>Usuario: pokemon         Contraseña: pokemon</p>
     <div class='form'>
-        <form action="http://localhost/chikisoft/controllers/validate.php" method="post">
+        <form action="http://localhost/chikisoft/controladores/validar.php" method="post">
             <label for="">Usuario</label>
             <input type="text" name="username" id="username">
             <label for="">Contraseña</label>

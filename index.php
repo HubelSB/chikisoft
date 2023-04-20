@@ -1,7 +1,6 @@
 <?php
     use controllers\mainController;
-    include 'controllers/inicial.php';
-
+    include 'controladores/inicial.php';
     date_default_timezone_set('America/Lima');
 
     $mi_instancia = new mainController;

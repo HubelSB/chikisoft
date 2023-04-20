@@ -1,13 +1,47 @@
 .form{
     height: 300px;
-    background-color: yellowgreen;
+    background-color: #356ABC;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 500%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 body{
-    background-color: yellow;
+    background-color: #F7DE5C;
+}
+.logo{
+    color: yellow;
+    font-size: 120%;
+    -webkit-text-stroke: 3px blue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.oculto{
+    display: none;
+}
+.busqueda{
+    display: flex;
+}
+.error{
+    color: red;
+}
+.resaltar{
+    color: blue;
+}
+.oculto{
+    display: none;
+}
+th{
+    background-color: gray;
+    color: black;
+}
+table,td,th{
+    border: 1px solid #333;
+    background: white;
+}
+#poketitulo{
+    background-color: black;
 }
