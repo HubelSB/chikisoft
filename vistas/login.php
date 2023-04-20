@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="login" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,13 @@
 </head>
 <body>
    <div class="formulario">
-      <form action="http://localhost/chikisoft/controladores/validar.php" method="post">
-         <label for=""> usuario </label>
+      <p class="logo">Pokedex Chikisoft</p>
+      <form class="ingreso" action="http://localhost/chikisoft/controladores/validar.php" method="post">
+         <label for=""> Usuario </label>
          <input type="text" name="usuario" id="usuario">
-         <label for="">clave</label>
+         <label for="">Contraseña</label>
          <input type="password" name="clave" id="clave">
-         <button type="submit" value="Ingresar">Ingresar al Sistema</button>
+         <button class="boton" type="submit" value="Ingresar">Iniciar sesión</button>
       </form>
    </div> 
 </body>
