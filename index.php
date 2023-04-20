@@ -5,6 +5,5 @@ include "controladores/controladorprincipal.php";
  use controladores\controladorprincipal;  
 
  $miinstancia = new controladorprincipal();
- $miinstancia->presentarpantalla();
- 
+ $miinstancia->presentarpantalla(); 
 ?>

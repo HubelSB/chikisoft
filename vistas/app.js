@@ -12,11 +12,18 @@ const getPokemon=function(id){
 }
 
 const pokemon=function(data){
-    pokenombre.textContent=data.name;
-    pokeorder.textContent=data.order;
-    pokeimg.innerHTML=`<img src="${data.sprites.other.dream_world.front_default}"`
-    pokehp.textContent=data.stats[0].base_stat;
-    pokexp.textContent=data.base_experience;
+    
+    pokenombre.textContent="Nombre : " + data.name;
+    pokeorder.textContent="ORDEN : "+data.order;
+    pokeimg.innerHTML="Imagen " + `<img src="${data.sprites.other.dream_world.front_default}"` //imagen del pokemon
+    pokehp.textContent="HP : "+data.stats[0].base_stat;
+    pokexp.textContent="EXP : " + data.base_experience;
 }
 
-getPokemon(25);
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+getPokemon(getRandomInt(1,1008));
