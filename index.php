@@ -1,10 +1,9 @@
 <?php
-class principal{
+// esta directiva jala un archivo
+include "controladores/controladorprincipal.php";
+// esta directiva usa el contenido especifico
+ use controladores\controladorprincipal;  
 
-    public $dato = "hola";
-
-    public function saluda(){
-        echo $dato;
-    }
-    
-}
+ $miinstancia = new controladorprincipal();
+ $miinstancia->presentarpantalla();
+?>
