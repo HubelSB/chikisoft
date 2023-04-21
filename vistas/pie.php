@@ -1,6 +1,6 @@
 <footer>
-    <div>
-       este es el pie de pagina  
-       <a href="http://localhost/chikisoft/controladores/salir.php">Salir</a>
-    </div>
+      <p>Derechos reservados &copy; 2023</p>
+      <a href="http://localhost/chikisoft/controladores/suscripcion.php">Subscribirse</a>
+      <a href="http://localhost/chikisoft/controladores/salir.php">Salir</a>
 </footer>
+</body>

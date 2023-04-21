@@ -1,7 +1,245 @@
-.formulario{
-    height: 300px;
-    background: #f0d0d0;
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* Estilos para el contenedor principal */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin: 0;
+}
+header p {
+    font-size: 18px;
+    color: #8c8c8c;
+}
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #8c8c8c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+nav a:hover {
+    background-color: #e8e8e8;
+}
+
+/* Estilos para el contenido principal */
+.container-peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-peliculas section {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.container-peliculas section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container-peliculas section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin: 20px;
+}
+.container-peliculas section p {
+    font-size: 16px;
+    color: #8c8c8c;
+    margin: 20px;
+}
+.container-peliculas section button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #4d4d4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.container-peliculas section button:hover {
+    background-color: #333333;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+footer p {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin: 10px;
+}
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 13px;
+}
+footer a:hover {
+    color: #747474;
+}
+/*estilo del login*/
+.login-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.login-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+.frm-form {
+    display: flex;
+    flex-direction: column;
+}
+.frm-lbl {
+    margin-bottom: 10px;
+}
+
+.frm-inpt {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+  
+.frm-btn {
+    background-color: #ffffffab;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+  
+.frm-btn:hover {
+    background-color: #dddddd9d;
+}
+
+/*estilo de la pagina de error*/
+.error-page{
+    background-color: #eeeeee;
+    text-align: center;
+}
+.error-usuario{
+    color: #eb3535;
+    text-transform: lowercase;
+}
+.ref{
+    text-decoration: none;
+    color:#333;
+}
+/* Estilo para el contenedor del buscador */
+.search-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+
+/* Estilo para el campo de búsqueda */
+.search-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+}
+  
+/* Estilo para el botón de búsqueda */
+.search-button {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+  
+/* Estilo para el botón de búsqueda al pasar el mouse */
+.search-button:hover {
+    background-color: #616161;
+}
+
+/* Estilo para el contenedor de la paginación */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para los enlaces de la paginación */
+  .pagination-link {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color:#3a3a3a;
+  }
+  
+  /* Estilo para el enlace activo de la paginación */
+  .pagination-link.active {
+    background-color: #3a3a3a;
+    color: white;
+  }
+  
+  /* Estilo para los puntos suspensivos de la paginación */
+  .pagination-dots {
+    padding: 10px;
+    font-size: 16px;
+  }

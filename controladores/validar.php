@@ -15,7 +15,5 @@ if ($usuario_sistema === $var_usuario
 
     header("Location: http://localhost/chikisoft/vistas/portal.php");
 } else {
-    echo "Usuario incorrecto...";
-    echo "<BR>";
-    echo "<a href='http://localhost/chikisoft/vistas/login.php'>Regresar</a>";
+    header("Location: http://localhost/chikisoft/vistas/error.php");
 }
